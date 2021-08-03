@@ -10,6 +10,8 @@ l'utilisation de certains de ces logitiels peuvent altérer votre experience d'u
 
 #ENG
 
+please exuse my english
+
 This repo contains tests, modified and hijacked files. FILES SHOULD NOT UNDER ANY CIRCUMSTANCES BE EXECUTED BY SOMEONE WHO DOES NOT KNOW WHAT THEY ARE DOING. 
 
 This repo may contain logitiels useful for scanning, osint, exploitation, privilege escalation already existing, if this is the case, the creator(s) will be mentioned 
