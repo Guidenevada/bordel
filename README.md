@@ -10,7 +10,7 @@ l'utilisation de certains de ces logitiels peuvent altérer votre experience d'u
 
 #ENG
 
-please exuse my english
+please excuse my english
 
 This repo contains tests, modified and hijacked files. FILES SHOULD NOT UNDER ANY CIRCUMSTANCES BE EXECUTED BY SOMEONE WHO DOES NOT KNOW WHAT THEY ARE DOING. 
 
