@@ -13,14 +13,17 @@ int main()
 	cout << "passwd: ";
 	string passwd;
 	cin >> passwd;
-	if (passwd == "75684848868943554384"){
-		cout << "Hi there";
-		cout << "vous pouvez taper ce même mot de passe dans 'validation' / you can type this same password in 'validation' section ";
 
-	}
-	else {
-		cout << "bad password / mauvais mot de passe\n\n";
-	}
+    while (passwd != "crackmecpp")
+    {
+        cout << "mauvais mot de pass\nVEUILLEZ ENTER LE BON MOT DE PASSE/Bad password\nPLEASE ENTER THE CORRECT PASSWORD\n\n";
+        cin >> passwd;
+
+    }
+    
+	
+	cout << "bad password / mauvais mot de passe\n\n";
+	
 
 	cout << "type some letters and press ENTER to continue...";
 	int exit;
